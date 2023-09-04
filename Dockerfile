@@ -1,6 +1,6 @@
 FROM rockylinux:9
 ENV container docker
-# see https://hub.docker.com/_/rockylinux
+# see https://hub.docker.com/_/rockylinux 
 # RockyLinux:9 missing /usr/sbin/init -> ../lib/systemd/systemd
 #  see https://github.com/rocky-linux/sig-cloud-instance-images/issues/39
 RUN [ ! -f /usr/sbin/init ] && dnf -y install systemd;

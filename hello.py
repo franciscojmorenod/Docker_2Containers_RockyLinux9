@@ -1,7 +1,7 @@
 import requests
 import netifaces as ni
 import os
-#32e577853ea54906a84171559231908
+
 
 class City_Weather:
     def __init__(self, xcity, xtemp, xcondition):
