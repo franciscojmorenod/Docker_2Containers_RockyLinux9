@@ -1,10 +1,10 @@
 ## Objective: 
 The objective is:  
-    - to create an image with the Linux Rocky9 OS  
+    - to create an image with the Linux Rocky9 OS.  
     - to create a Multi-Container System (2 containers in this case).  
     - to test how the two containers can communicate in a network via TCP sockets.  
     - to create each container using the same image.  
-    - to use Docker to perform this work  
+    - to use Docker to perform this work.  
 
 ## Procedure
 - Run fm2.bat to create the image and containers
