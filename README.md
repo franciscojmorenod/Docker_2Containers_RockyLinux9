@@ -20,7 +20,7 @@ The objective is:
     get the ipaddress by typing : ifconfig  
 
     run the TCP server by typing  
-    - $ python3 TCPserver.py -i xxx.xxx.xxx.xxx
+    - $ python3 TCPserver.py -i xxx.xxx.xxx.xxx -p yyyy
         - WELCOME TO THE TCP SERVER
         - Server Address = 172.17.0.2
         - Server Port    = 2022
