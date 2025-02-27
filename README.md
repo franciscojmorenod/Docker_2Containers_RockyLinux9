@@ -8,8 +8,7 @@ The objective is:
 
 ## Procedure
 - Run docker-compose up -d
-    - Build a Docker image using rockylinux:9
-    - Create 2 Containers using the just created image
+    - Create 2 Containers using the image rockylinux:9
     - Run the containers
 
 - Refer to the specific "client.dockerfile" and "server.dockerfile" for the more details
