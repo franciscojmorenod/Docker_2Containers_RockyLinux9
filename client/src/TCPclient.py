@@ -15,8 +15,8 @@ args = parser.parse_args()
 ServerIPaddress = args.ipaddress
 ServerPort = args.port
 
-print( "Client Address =", ServerIPaddress)
-print( "Client Port    =", ServerPort)
+print( "Server Address =", ServerIPaddress)
+print( "Server Port    =", ServerPort)
 
 #===============================================================
 

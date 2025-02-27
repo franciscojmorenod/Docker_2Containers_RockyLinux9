@@ -1,0 +1,39 @@
+services:
+  server:
+    container_name: "server"
+    image: "rockylinux:9"
+    ports:
+      - "4000:80"
+    build:
+      context: server
+      dockerfile: server.dockerfile
+    networks:
+      your_network:
+        ipv4_address: 172.20.0.2      
+    command: ["sleep","infinity"]      
+
+
+  client:
+    container_name: "client"
+    image: "rockylinux:9"
+    ports:
+      - "4001:80"
+    build:
+      context: client
+      dockerfile: client.dockerfile
+    networks:
+      your_network:
+        ipv4_address: 172.20.0.3
+    command: ["sleep","infinity"]
+
+
+
+networks:
+  your_network:
+    ipam:
+      config:
+        - subnet: 172.20.0.0/24
+
+
+
+

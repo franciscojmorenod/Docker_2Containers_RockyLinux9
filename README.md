@@ -1,18 +1,18 @@
 ## Objective: 
 The objective is:  
-    - to create an image with the Linux Rocky9 OS  
+    - to create an image with the Linux Rocky9 OS.  
     - to create a Multi-Container System (2 containers in this case).  
     - to test how the two containers can communicate in a network via TCP sockets.  
     - to create each container using the same image.  
-    - to use Docker to perform this work  
+    - to use Docker to perform this work.  
 
 ## Procedure
-- Run fm2.bat to create the image and containers
+- Run docker-compose up -d
     - Build a Docker image using rockylinux:9
     - Create 2 Containers using the just created image
     - Run the containers
 
-- Refer to the "Dockerfile" for the more details
+- Refer to the specific "client.dockerfile" and "server.dockerfile" for the more details
 
 
 ## Running the TCPserver    
@@ -21,7 +21,7 @@ The objective is:
     get the ipaddress by typing : ifconfig  
 
     run the TCP server by typing  
-    - $ python3 TCPserver.py
+    - $ python3 TCPserver.py -i xxx.xxx.xxx.xxx
         - WELCOME TO THE TCP SERVER
         - Server Address = 172.17.0.2
         - Server Port    = 2022
@@ -32,7 +32,7 @@ The objective is:
     get the ipaddress by typing : ifconfig  
 
     run the TCP client by typing  
-    - $ python3 TCPclient.py
+    - $ python3 TCPclient.py -i xxx.xxx.xxx.xxx
         - WELCOME TO THE TCP  CLIENT
         - Client Address = 172.17.0.3
         - Client Port    = 2022

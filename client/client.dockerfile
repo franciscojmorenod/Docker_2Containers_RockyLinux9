@@ -35,9 +35,9 @@ EXPOSE 22
 VOLUME [ "/sys/fs/cgroup" ]
 CMD ["/usr/sbin/init"]
 
-COPY hello.py /home/.
-COPY 123.txt /home/.
-COPY TCPserver.py /home/fjmoreno/.
-COPY TCPclient.py /home/fjmoreno/.
+COPY src/hello.py /home/.
+COPY src/123.txt /home/.
+COPY src/TCPserver.py /home/fjmoreno/.
+COPY src/TCPclient.py /home/fjmoreno/.
 WORKDIR /home/
 RUN python3 hello.py
